@@ -1,77 +1,174 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dompet Kulit Elegan</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src='https://connect.facebook.net/en_US/fbevents.js';
+    s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script');
+    fbq('init', 'YOUR_PIXEL_ID'); // ← GANTI DENGAN PIXEL ANDA
+    fbq('track', 'PageView');
+    fbq('track', 'ViewContent');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
 </head>
 <body class="bg-light">
 
-  <div class="container py-4">
-    <div class="bg-white rounded shadow-sm p-3">
+<div class="container py-4">
+  <div class="bg-white rounded shadow-sm p-3">
 
-      <!-- Header Ikon -->
-      <div class="d-flex justify-content-around text-center border-bottom pb-3 mb-3">
-        <div>
-          <i class="bi bi-bag-check-fill fs-2 text-primary"></i>
-          <div class="small fw-bold mt-1">JAMINAN<br>KEPUASAN</div>
-        </div>
-        <div>
-          <i class="bi bi-shield-check fs-2 text-success"></i>
-          <div class="small fw-bold mt-1">TRANSAKSI<br>AMAN</div>
+    <!-- Header Ikon -->
+    <div class="d-flex justify-content-around text-center border-bottom pb-3 mb-3">
+      <div>
+        <i class="bi bi-bag-check-fill fs-2 text-primary"></i>
+        <div class="small fw-bold mt-1">JAMINAN<br>KEPUASAN</div>
+      </div>
+      <div>
+        <i class="bi bi-shield-check fs-2 text-success"></i>
+        <div class="small fw-bold mt-1">TRANSAKSI<br>AMAN</div>
+      </div>
+    </div>
+
+    <!-- Gambar Produk -->
+    <div class="text-center mb-3">
+      <img src="https://via.placeholder.com/400x250?text=Dompet+Kulit" alt="Dompet Kulit" class="img-fluid rounded" />
+    </div>
+
+    <!-- Deskripsi -->
+    <h5 class="fw-bold">Dapatkan Dompet Berkualitas dengan Harga Super Hemat!</h5>
+    <p>
+      Ingin dompet yang stylish, fungsional, dan tahan lama? Kami punya solusinya! Dibuat dari kulit sintetis berkualitas, dompet ini memiliki desain modern yang elegan dan cocok digunakan untuk berbagai kebutuhan sehari-hari.
+    </p>
+
+    <!-- Fitur -->
+    <h6 class="fw-bold">Fitur Unggulan:</h6>
+    <ul class="list-unstyled">
+      <li>✅ 2 slot kartu untuk menyimpan ATM, KTP, SIM, dan lainnya</li>
+      <li>✅ 2 slot tambahan untuk menyimpan lebih banyak kartu</li>
+      <li>✅ 2 kantung sisip tersembunyi untuk barang kecil</li>
+      <li>✅ 2 ruang utama untuk menyimpan uang tanpa perlu dilipat</li>
+    </ul>
+
+    <!-- Form WhatsApp -->
+    <h6 class="fw-bold mt-4">Pesan Sekarang:</h6>
+    <form id="waForm">
+      <div class="mb-3">
+        <label for="nama" class="form-label">Nama</label>
+        <input type="text" class="form-control" id="nama" placeholder="Nama Anda" required>
+      </div>
+      <div class="mb-3">
+        <label for="hp" class="form-label">No. Telepon</label>
+        <input type="tel" class="form-control" id="hp" placeholder="08xxxxxxxxxx" required>
+      </div>
+      <div class="d-grid">
+        <button type="submit" class="btn btn-success btn-lg">
+          Kirim ke WhatsApp
+        </button>
+      </div>
+    </form>
+
+    <!-- Review Pelanggan -->
+    <h6 class="fw-bold mt-5">Apa Kata Pelanggan Kami</h6>
+    <div class="row row-cols-1 row-cols-md-2 g-3 mt-2">
+
+      <div class="col">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <strong>Rina – Bandung</strong>
+              <div class="text-warning">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+            <p class="mt-2 mb-0 small">"Dompetnya bagus banget! Bahan terasa premium, jahitannya rapi. Sudah 3 bulan pakai masih awet."</p>
+          </div>
         </div>
       </div>
 
-      <!-- Gambar Produk -->
-      <div class="text-center mb-3">
-        <img src="https://via.placeholder.com/400x250?text=Dompet+Kulit" alt="Dompet Kulit" class="img-fluid rounded">
+      <div class="col">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <strong>Andi – Jakarta</strong>
+              <div class="text-warning">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+            <p class="mt-2 mb-0 small">"Pengiriman cepat, dompet persis seperti di gambar. Recommended seller!"</p>
+          </div>
+        </div>
       </div>
 
-      <!-- Deskripsi -->
-      <h5 class="fw-bold">Dapatkan Dompet Berkualitas dengan Harga Super Hemat!</h5>
-      <p>
-        Ingin dompet yang stylish, fungsional, dan tahan lama? Kami punya solusinya! Dibuat dari kulit sintetis berkualitas, dompet ini memiliki desain modern yang elegan dan cocok digunakan untuk berbagai kebutuhan sehari-hari.
-      </p>
+      <div class="col">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <strong>Dewi – Surabaya</strong>
+              <div class="text-warning">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill opacity-25"></i>
+              </div>
+            </div>
+            <p class="mt-2 mb-0 small">"Saya pesan untuk hadiah suami, dia suka banget! Terima kasih banyak."</p>
+          </div>
+        </div>
+      </div>
 
-      <!-- Fitur -->
-      <h6 class="fw-bold">Fitur Unggulan:</h6>
-      <ul class="list-unstyled">
-        <li>✅ 2 slot kartu untuk menyimpan ATM, KTP, SIM, dan lainnya</li>
-        <li>✅ 2 slot tambahan untuk menyimpan lebih banyak kartu</li>
-        <li>✅ 2 kantung sisip tersembunyi untuk barang kecil</li>
-        <li>✅ 2 ruang utama untuk menyimpan uang tanpa perlu dilipat</li>
-      </ul>
-
-
-
-      <link href="https://promodompet.form.id/css/app.css" rel="stylesheet"/>
-<mengantar-form-widget id="mengantar-form-widget" url="promo-dompet" domain="promodompet.form.id"  embed="true"
-settings='{"type": "page", 
-    "popupButtonText": "Klik untuk pemesanan",
-    "popupText": "Form Pemesanan",
-    "popupButtonColor": "#2e47ba",
-    "redirectTo": "https://promodompet.form.id",
-    "isFbPixel": "true",
-    "isHideBackground": "true",
-    "isNoMargin": "false",
-    "isGtm": "false"}'
-></mengantar-form-widget>
-<script src="https://promodompet.form.id/app.js"></script>
-<style type="text/css">
-            #app{background-color:transparent !important;text-align:left} .embed-sealHide, .embed-leftHide, .bottom-bar-text{display:none !important;} .embed-rightHide{flex: 0 0 100% !important; width: 100% !important; max-width:100% !important; margin:auto;} .embed-bgHide{box-shadow:none !important; background:transparent; border:none !important; padding: 1px 20px !important; margin:0;} .embed-topSpace{margin:auto !important;} .embed-wrapper{height: auto !important; overflow:initial !important;} .embed-notopMargin{margin:0 !important; .embed-gap{gap: 10px !important;}}
-            </style>
-      <!-- Tombol CTA -->
-      <div class="d-grid mt-4">
-        <a href="https://wa.me/62xxxxxxxxxx" class="btn btn-success btn-lg">
-          Pesan Sekarang via WhatsApp
-        </a>
+      <div class="col">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <strong>Ilham – Bekasi</strong>
+              <div class="text-warning">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+            <p class="mt-2 mb-0 small">"Harga murah, kualitas mantap. Saya order lagi buat teman."</p>
+          </div>
+        </div>
       </div>
 
     </div>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
+</div>
+
+<!-- Script Form WhatsApp + Pixel Event -->
+<script>
+  document.getElementById("waForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    var nama = document.getElementById("nama").value.trim();
+    var hp = document.getElementById("hp").value.trim();
+    var noAdmin = "6281234567890"; // ← GANTI dengan nomor WA Anda tanpa +
+    var pesan = `Halo, saya ${nama} ingin pesan dompet. No HP saya: ${hp}`;
+    var url = `https://wa.me/${noAdmin}?text=${encodeURIComponent(pesan)}`;
+
+    // Facebook Pixel: Lead
+    if (typeof fbq !== 'undefined') {
+      fbq('track', 'Lead');
+    }
+
+    window.open(url, "_blank");
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
+                </html>
